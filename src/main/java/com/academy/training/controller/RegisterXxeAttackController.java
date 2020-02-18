@@ -18,12 +18,12 @@ import com.academy.training.model.Article;
 
 @RestController
 @RequestMapping("/api")
-public class RegisterAttackController {
+public class RegisterXxeAttackController {
 
     protected static final Logger logger = LogManager.getLogger();
 
-    @GetMapping(value = "/registerattack", produces = "text/html")
-    public ResponseEntity<String> registerAttack() {
+    @GetMapping(value = "/registerxxeattack", produces = "text/html")
+    public ResponseEntity<String> registerXxeAttack() {
 
         logger.info("Http request in !DOCTYPE element in xml is executed!");
        return ResponseEntity.ok("ok") ;
