@@ -19,7 +19,7 @@ Testen gaat via Swagger (http://localhost:9080/swagger-ui.html#/) en browser. Er
 Code injectie <br>
 <br>
 Voeg middels 'addArticle' van de ArticleController een article toe met in het veld description: <br>
-<code><script>alert('Hello')</script><code><br>
+<code><script>alert('Hello')</script></code><br>
 (id mag leeg blijven)<br>
 In de response is het aangemaakte article te zien met het id.<br>
 Gebruik dit id in 'getArticleById' om het article op te halen.<br>
