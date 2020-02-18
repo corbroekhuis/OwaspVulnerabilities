@@ -1,25 +1,25 @@
 # OwaspVulnerabilities
 
-In deze applicatie zijn drie vulnerabilities ingebouwd.
+In deze applicatie zijn drie vulnerabilities ingebouwd.<br>
 
-Injection (sql en code)
-Cross site scripting XSS
-XML External Entity (XXE) Processing
+Injection (sql en code)<br>
+Cross site scripting XSS<br>
+XML External Entity (XXE) Processing<br>
 
-Injection (sql en code)
-Na het starten van de applicatie is er een H2 database met url: http://localhost:9080/h2-console/
-User is sa, password is leeg.
+Injection (sql en code)<br>
+Na het starten van de applicatie is er een H2 database met url: http://localhost:9080/h2-console/<br>
+User is sa, password is leeg.<br>
 
-Tabellen User en Article
-User wordt gebruikt om 'in te loggen' - SQL injectie
-Article wordt gebruikt om code te injecteren.
+Tabellen User en Article<br>
+User wordt gebruikt om 'in te loggen' - SQL injectie<br>
+Article wordt gebruikt om code te injecteren.<br>
 
-Testen gaat via Swagger (http://localhost:9080/swagger-ui.html#/) en browser. Er is geen frontend.
+Testen gaat via Swagger (http://localhost:9080/swagger-ui.html#/) en browser. Er is geen frontend.<br>
 
-Code injectie 
+Code injectie <br>
 
-Voeg middels 'addArticle' van de ArticleController een article toe met in het veld description: 
-<script>alert('Hello')</script>
+Voeg middels 'addArticle' van de ArticleController een article toe met in het veld description: <br>
+<code><script>alert('Hello')</script><code>
 (id mag leeg blijven)
 In de response is het aangemaakte article te zien met het id.
 Gebruik dit id in 'getArticleById' om het article op te halen.
