@@ -46,6 +46,7 @@ Het is nu de kunst om iets in het password in te vullen zodat een geldige query 
 Een voorbeeld is: ' or '1' = '1<br>
 De query wordt dan:<br>
 SELECT * FROM User WHERE user = 'nikki@info.org' and password = '' or '1' = '1'<br>
+Het gevulde user object is dan te zien in de response<br>
 Dit: ' or '1' = '1'   ; drop table article; --<br>
 geeft query <br>
 SELECT * FROM User WHERE user = 'nikki@info.org' and password = '' or '1' = '1'   ; drop table article; --'<br>
